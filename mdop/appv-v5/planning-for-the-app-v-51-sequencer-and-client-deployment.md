@@ -1,0 +1,112 @@
+---
+title: Планирование развертывания программы Sequencer и клиента App-V 5.1
+description: Планирование развертывания программы Sequencer и клиента App-V 5.1
+author: dansimp
+ms.assetid: d92f8773-fa7d-4926-978a-433978f91202
+ms.reviewer: ''
+manager: dansimp
+ms.author: dansimp
+ms.pagetype: mdop, appcompat, virtualization
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.prod: w10
+ms.date: 06/21/2016
+ms.openlocfilehash: 31a0296814b16ba1c776dca522423fc7b6b6ed96
+ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "10813461"
+---
+# <span data-ttu-id="46c42-103">Планирование развертывания программы Sequencer и клиента App-V 5.1</span><span class="sxs-lookup"><span data-stu-id="46c42-103">Planning for the App-V 5.1 Sequencer and Client Deployment</span></span>
+
+
+<span data-ttu-id="46c42-104">Прежде чем приступить к работе с Microsoft Application Virtualization (App-V) 5,1, необходимо установить секвенсор App-v 5,1, клиент App-V 5,1 и, возможно, общее хранилище содержимого App-V 5,1.</span><span class="sxs-lookup"><span data-stu-id="46c42-104">Before you can start to use Microsoft Application Virtualization (App-V) 5.1, you must install the App-V 5.1 sequencer, the App-V 5.1 client, and optionally the App-V 5.1 shared content store.</span></span> <span data-ttu-id="46c42-105">В следующих разделах Планирование рассматриваются для этих установок.</span><span class="sxs-lookup"><span data-stu-id="46c42-105">The following sections address planning for these installations.</span></span>
+
+## <span data-ttu-id="46c42-106">Планирование развертывания App-V 5,1 Sequencer</span><span class="sxs-lookup"><span data-stu-id="46c42-106">Planning for App-V 5.1 sequencer deployment</span></span>
+
+
+<span data-ttu-id="46c42-107">Приложение App-V 5,1 использует процесс, называемый виртуализацией, для создания виртуализированных приложений и пакетов приложений.</span><span class="sxs-lookup"><span data-stu-id="46c42-107">App-V 5.1 uses a process called sequencing to create virtualized applications and application packages.</span></span> <span data-ttu-id="46c42-108">Для виртуализации требуется использование компьютера, на котором работает секвенсор App-V 5,1.</span><span class="sxs-lookup"><span data-stu-id="46c42-108">Sequencing requires the use of a computer that runs the App-V 5.1 sequencer.</span></span>
+
+<span data-ttu-id="46c42-109">**Примечание**  Сведения о новых возможностях приложения App-V 5,1 можно найти в разделе **улучшения программы Sequencer** [о приложении app-v 5,1](about-app-v-51.md).</span><span class="sxs-lookup"><span data-stu-id="46c42-109">**Note** For information about the new functionality of App-V 5.1 sequencer, see the **Sequencer Improvements** section of [About App-V 5.1](about-app-v-51.md).</span></span>
+
+ 
+
+<span data-ttu-id="46c42-110">Компьютер, на котором работает секвенсор App-V 5,1, должен соответствовать минимальным системным требованиям.</span><span class="sxs-lookup"><span data-stu-id="46c42-110">The computer that runs the App-V 5.1 sequencer must meet the minimum system requirements.</span></span> <span data-ttu-id="46c42-111">Список требований можно найти в разделе [Поддерживаемые конфигурации App-V 5,1](app-v-51-supported-configurations.md).</span><span class="sxs-lookup"><span data-stu-id="46c42-111">For a list of these requirements, see [App-V 5.1 Supported Configurations](app-v-51-supported-configurations.md).</span></span>
+
+<span data-ttu-id="46c42-112">В идеале программа Sequencer должна быть установлена на компьютере, работающем под управлением виртуальной машины.</span><span class="sxs-lookup"><span data-stu-id="46c42-112">Ideally, you should install the sequencer on a computer running as a virtual machine.</span></span> <span data-ttu-id="46c42-113">Это позволяет более легко вернуть компьютер, на котором работает секвенсор, в состояние очистки перед виртуализацией другого приложения.</span><span class="sxs-lookup"><span data-stu-id="46c42-113">This enables you to more easily revert the computer running the sequencer to a “clean” state before sequencing another application.</span></span> <span data-ttu-id="46c42-114">При установке секвенсора с помощью виртуальной машины необходимо выполнить следующие действия:</span><span class="sxs-lookup"><span data-stu-id="46c42-114">When you install the sequencer using a virtual machine, you should perform the following steps:</span></span>
+
+1.  <span data-ttu-id="46c42-115">Установите все связанные необходимые компоненты программы Sequencer.</span><span class="sxs-lookup"><span data-stu-id="46c42-115">Install all associated sequencer prerequisites.</span></span>
+
+2.  <span data-ttu-id="46c42-116">Установите секвенсор.</span><span class="sxs-lookup"><span data-stu-id="46c42-116">Install the sequencer.</span></span>
+
+3.  <span data-ttu-id="46c42-117">Сделайте "снимок" среды.</span><span class="sxs-lookup"><span data-stu-id="46c42-117">Take a “snapshot” of the environment.</span></span>
+
+<span data-ttu-id="46c42-118">**Важно!**  Вы должны иметь корпоративную проверку группы корпоративной безопасности и утвердить план обработки последовательности.</span><span class="sxs-lookup"><span data-stu-id="46c42-118">**Important** You should have your corporate security team review and approve the sequencing process plan.</span></span> <span data-ttu-id="46c42-119">По соображениям безопасности следует хранить операции Sequencer в лаборатории, отдельном от производственной среды.</span><span class="sxs-lookup"><span data-stu-id="46c42-119">For security reasons, you should keep the sequencer operations in a lab that is separate from the production environment.</span></span> <span data-ttu-id="46c42-120">Разделение на цветоделение может быть как простым, так и полным, в зависимости от требований бизнеса.</span><span class="sxs-lookup"><span data-stu-id="46c42-120">The separation arrangement can be as simple or as comprehensive as necessary, based on your business requirements.</span></span> <span data-ttu-id="46c42-121">Компьютеры виртуализации должны иметь возможность подключаться к корпоративной сети, чтобы копировать завершенные пакеты на производственные серверы.</span><span class="sxs-lookup"><span data-stu-id="46c42-121">The sequencing computers must be able to connect to the corporate network to copy finished packages to the production servers.</span></span> <span data-ttu-id="46c42-122">Тем не менее, так как компьютеры последовательности обычно работают без защиты от вирусов, они не должны входить в корпоративную сеть, не защищенную паролем.</span><span class="sxs-lookup"><span data-stu-id="46c42-122">However, because the sequencing computers are typically operated without antivirus protection, they must not be on the corporate network unprotected.</span></span> <span data-ttu-id="46c42-123">Например, вы можете работать в брандмауэре или сегменте изолированной сети.</span><span class="sxs-lookup"><span data-stu-id="46c42-123">For example, you might be able to operate behind a firewall or on an isolated network segment.</span></span> <span data-ttu-id="46c42-124">Вы также можете использовать виртуальные машины, настроенные для предоставления общего доступа к изолированной виртуальной сети.</span><span class="sxs-lookup"><span data-stu-id="46c42-124">You might also be able to use virtual machines that are configured to share an isolated virtual network.</span></span> <span data-ttu-id="46c42-125">Следуйте своим корпоративным политикам безопасности, чтобы безопасно решить эти проблемы.</span><span class="sxs-lookup"><span data-stu-id="46c42-125">Follow your corporate security policies to safely address these concerns.</span></span>
+
+ 
+
+## <span data-ttu-id="46c42-126">Планирование развертывания клиента App-V 5,1</span><span class="sxs-lookup"><span data-stu-id="46c42-126">Planning for App-V 5.1 client deployment</span></span>
+
+
+<span data-ttu-id="46c42-127">Для выполнения виртуализированных пакетов на целевых компьютерах необходимо установить клиент App-V 5,1 на целевые компьютеры.</span><span class="sxs-lookup"><span data-stu-id="46c42-127">To run virtualized packages on target computers, you must install the App-V 5.1 client on the target computers.</span></span> <span data-ttu-id="46c42-128">Клиент App-V 5,1 является компонентом, который запускает виртуализированное приложение на целевом компьютере.</span><span class="sxs-lookup"><span data-stu-id="46c42-128">The App-V 5.1 client is the component that runs a virtualized application on a target computer.</span></span> <span data-ttu-id="46c42-129">Клиент позволяет пользователям взаимодействовать со значками и определенными типами файлов для запуска виртуализированных приложений.</span><span class="sxs-lookup"><span data-stu-id="46c42-129">The client enables users to interact with icons and specific file types to start virtualized applications.</span></span> <span data-ttu-id="46c42-130">Кроме того, клиент помогает получить содержимое приложения с сервера управления и кэширует содержимое, прежде чем клиент запустит приложение.</span><span class="sxs-lookup"><span data-stu-id="46c42-130">The client also helps obtain application content from the management server and caches the content before the client starts the application.</span></span> <span data-ttu-id="46c42-131">Существует два разных типа клиентов: клиент для служб удаленных рабочих столов, который используется на серверных системах (узле сеансов удаленных рабочих столов) и клиенте App-V 5,1, который используется для всех остальных компьютеров.</span><span class="sxs-lookup"><span data-stu-id="46c42-131">There are two different client types: the client for Remote Desktop Services, which is used on Remote Desktop Session Host (RD Session Host) server systems and the App-V 5.1 client, which is used for all other computers.</span></span>
+
+<span data-ttu-id="46c42-132">Клиент App-V 5,1 следует настроить с помощью командной строки установщика либо с помощью сценария PowerShell после завершения установки.</span><span class="sxs-lookup"><span data-stu-id="46c42-132">The App-V 5.1 client should be configured by using either the installer command line or by using a PowerShell script after the installation has been completed.</span></span>
+
+<span data-ttu-id="46c42-133">Для ускорения развертывания клиентского программного обеспечения App-V 5,1 необходимо заранее определить параметры.</span><span class="sxs-lookup"><span data-stu-id="46c42-133">The settings must be defined carefully in advance in order to expedite the deployment of the App-V 5.1 client software.</span></span> <span data-ttu-id="46c42-134">Это особенно важно, если у вас есть компьютеры в разных офисах, где необходимо настроить для них использование разных расположений.</span><span class="sxs-lookup"><span data-stu-id="46c42-134">This is especially important when you have computers in different offices where the clients must be configured to use different source locations.</span></span>
+
+<span data-ttu-id="46c42-135">Кроме того, необходимо определить, как будет развертываться клиентское программное обеспечение.</span><span class="sxs-lookup"><span data-stu-id="46c42-135">You must also determine how you will deploy the client software.</span></span> <span data-ttu-id="46c42-136">Несмотря на то, что вы можете развернуть клиент вручную на каждом компьютере, большинство организаций предпочитают развертывание клиента с помощью автоматизированного процесса.</span><span class="sxs-lookup"><span data-stu-id="46c42-136">Although it is possible to deploy the client manually on each computer, most organizations prefer to deploy the client through an automated process.</span></span> <span data-ttu-id="46c42-137">В более крупной организации может быть установлена операционная система многофункционального распространения программного обеспечения (ESD) — идеальная клиентская система развертывания.</span><span class="sxs-lookup"><span data-stu-id="46c42-137">A larger organization might have an operational Electronic Software Distribution (ESD) system, which is an ideal client deployment system.</span></span> <span data-ttu-id="46c42-138">Если система ESD не существует, вы можете использовать стандартный способ установки программного обеспечения своей организации.</span><span class="sxs-lookup"><span data-stu-id="46c42-138">If no ESD system exists, you can use your organization’s standard method of installing software.</span></span> <span data-ttu-id="46c42-139">Возможные методы включают в себя групповую политику или различные методики создания сценариев.</span><span class="sxs-lookup"><span data-stu-id="46c42-139">Possible methods include Group Policy or various scripting techniques.</span></span> <span data-ttu-id="46c42-140">В зависимости от количества и разнородных местоположений на клиентских компьютерах этот процесс развертывания может быть сложным.</span><span class="sxs-lookup"><span data-stu-id="46c42-140">Depending on the quantity and disparate locations of your client computers, this deployment process can be complex.</span></span> <span data-ttu-id="46c42-141">Необходимо использовать структурированный подход, чтобы убедиться, что на всех компьютерах установлен клиент с правильной конфигурацией.</span><span class="sxs-lookup"><span data-stu-id="46c42-141">You must use a structured approach to ensure that all computers get the client installed with the correct configuration.</span></span>
+
+<span data-ttu-id="46c42-142">Список минимальных требований клиента см. в разделе [требования к приложению App-V 5,1](app-v-51-prerequisites.md).</span><span class="sxs-lookup"><span data-stu-id="46c42-142">For a list of the client minimum requirements see [App-V 5.1 Prerequisites](app-v-51-prerequisites.md).</span></span>
+
+## <a href="" id="bkmk-client-coexist"></a><span data-ttu-id="46c42-143">Планирование сосуществования клиента App-V</span><span class="sxs-lookup"><span data-stu-id="46c42-143">Planning for App-V client coexistence</span></span>
+
+
+<span data-ttu-id="46c42-144">Вы можете развернуть клиент App-V 5,1 в клиенте App-V 4,6 на стороне клиента.</span><span class="sxs-lookup"><span data-stu-id="46c42-144">You can deploy the App-V 5.1 client side by side with the App-V 4.6 client.</span></span> <span data-ttu-id="46c42-145">Для обеспечения совместимости с клиентом необходимо добавить или опубликовать виртуализированные приложения с помощью файла конфигурации развертывания или файла конфигурации пользователя, так как в этих файлах конфигурации есть определенные параметры, которые необходимо настроить, чтобы приложение App-V 5,1 работает с клиентами App-V 4.6.</span><span class="sxs-lookup"><span data-stu-id="46c42-145">Client coexistence requires that you add or publish virtualized applications by using either a deployment configuration file or a user configuration file, because there are certain settings in these configuration files that must be configured in order for App-V 5.1 to function with App-V4.6 clients.</span></span> <span data-ttu-id="46c42-146">При обновлении пакета с помощью клиента или сервера пакет должен повторно отправить файл конфигурации.</span><span class="sxs-lookup"><span data-stu-id="46c42-146">When a package is upgraded by using either the client or the server, the package must resubmit the configuration file.</span></span> <span data-ttu-id="46c42-147">Это справедливо для любого пакета, который имеет соответствующий файл конфигурации, поэтому он не специфичен для сосуществования клиентов.</span><span class="sxs-lookup"><span data-stu-id="46c42-147">This is true for any package that has a corresponding configuration file, so it is not specific to client coexistence.</span></span> <span data-ttu-id="46c42-148">Тем не менее, если вы не отправили файл конфигурации во время обновления пакета, состояние пакета не будет работать должным образом в сценариях сосуществования.</span><span class="sxs-lookup"><span data-stu-id="46c42-148">However, if you do not submit the configuration file during the package upgrade, then the package state will not function as expected in coexistence scenarios.</span></span>
+
+<span data-ttu-id="46c42-149">Файлы динамических конфигураций App-V 5,1 настройте пакет для определенного пользователя.</span><span class="sxs-lookup"><span data-stu-id="46c42-149">App-V 5.1 dynamic configuration files customize a package for a specific user.</span></span> <span data-ttu-id="46c42-150">Перед использованием файла динамической конфигурации пользователя (XML) или динамической конфигурации развертывания необходимо создать его.</span><span class="sxs-lookup"><span data-stu-id="46c42-150">You must create the dynamic user configuration (.xml) file or the dynamic deployment configuration file before you can use them.</span></span> <span data-ttu-id="46c42-151">Чтобы создать файл, необходимо выполнить расширенную операцию вручную.</span><span class="sxs-lookup"><span data-stu-id="46c42-151">To create the file it requires an advanced manual operation.</span></span>
+
+<span data-ttu-id="46c42-152">При использовании динамического файла пользовательской конфигурации никакие сведения о App-V 5,1 для расширения в файле манифеста не используются.</span><span class="sxs-lookup"><span data-stu-id="46c42-152">When a dynamic user configuration file is used, none of the App-V 5.1 information for the extension in the manifest file is used.</span></span> <span data-ttu-id="46c42-153">Это означает, что файл динамической конфигурации пользователя должен содержать все для расширения, специфического для App-V 5,1 в файле манифеста, а также изменения, которые вы хотите внести, такие как удаления и обновления.</span><span class="sxs-lookup"><span data-stu-id="46c42-153">This means that the dynamic user configuration file must include everything for the extension that is specific to App-V 5.1 in the manifest file, as well as the changes that you want to make, such as, deletions and updates.</span></span> <span data-ttu-id="46c42-154">Дополнительные сведения о том, как создать настраиваемый файл конфигурации, приведены [в разделе Создание настраиваемого файла конфигурации с помощью консоли управления App-V 5,1](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md).</span><span class="sxs-lookup"><span data-stu-id="46c42-154">For more information about how to create a custom configuration file, see [How to Create a Custom Configuration File by Using the App-V 5.1 Management Console](how-to-create-a-custom-configuration-file-by-using-the-app-v-51-management-console.md).</span></span>
+
+## <a href="" id="bkmk-plan-for-scs"></a><span data-ttu-id="46c42-155">Планирование хранилища общего содержимого для App-V 5,1 (SCS)</span><span class="sxs-lookup"><span data-stu-id="46c42-155">Planning for the App-V 5.1 Shared Content Store (SCS)</span></span>
+
+
+<span data-ttu-id="46c42-156">Режим хранилища общего содержимого для App-V 5,1 позволяет компьютеру с запущенным клиентом App-V 5,1 запускать виртуализированные приложения, но ни одно из содержимого пакета не сохраняется на компьютере, на котором запущен клиент App-V 5,1.</span><span class="sxs-lookup"><span data-stu-id="46c42-156">The App-V 5.1 shared content store mode allows the computer running the App-V 5.1 client to run virtualized applications and none of the package contents is saved on the computer running the App-V 5.1 client.</span></span> <span data-ttu-id="46c42-157">Виртуальные приложения переносятся в поток на целевые компьютеры только по запросу клиента.</span><span class="sxs-lookup"><span data-stu-id="46c42-157">Virtual applications are streamed to target computers only when requested by the client.</span></span>
+
+<span data-ttu-id="46c42-158">В следующем списке приведены некоторые преимущества использования хранилища общего содержимого App-V 5,1.</span><span class="sxs-lookup"><span data-stu-id="46c42-158">The following list displays some of the benefits of using the App-V 5.1 shared content store:</span></span>
+
+-   <span data-ttu-id="46c42-159">Снижены конфликты приложений между приложениями и многопоточными приложениями, и, следовательно, меньше требуется тестирование регрессии</span><span class="sxs-lookup"><span data-stu-id="46c42-159">Reduced app-to-app and multi-user application conflicts and hence a reduced need for regression testing</span></span>
+
+-   <span data-ttu-id="46c42-160">Ускоренное развертывание приложений с целью снижения риска развертывания</span><span class="sxs-lookup"><span data-stu-id="46c42-160">Accelerated application deployment by reduction of deployment risk</span></span>
+
+-   <span data-ttu-id="46c42-161">Упрощенное управление профилями</span><span class="sxs-lookup"><span data-stu-id="46c42-161">Simplified profile management</span></span>
+
+
+
+
+
+
+## <a href="" id="other-resources-for-the-app-v-5-1-deployment-"></a><span data-ttu-id="46c42-162">Другие ресурсы по развертыванию App-V 5,1</span><span class="sxs-lookup"><span data-stu-id="46c42-162">Other resources for the App-V 5.1 deployment</span></span>
+
+
+[<span data-ttu-id="46c42-163">Планирование развертывания App-V</span><span class="sxs-lookup"><span data-stu-id="46c42-163">Planning to Deploy App-V</span></span>](planning-to-deploy-app-v51.md)
+
+## <span data-ttu-id="46c42-164">Статьи по теме</span><span class="sxs-lookup"><span data-stu-id="46c42-164">Related topics</span></span>
+
+
+[<span data-ttu-id="46c42-165">Установка программы Sequencer</span><span class="sxs-lookup"><span data-stu-id="46c42-165">How to Install the Sequencer</span></span>](how-to-install-the-sequencer-51beta-gb18030.md)
+
+[<span data-ttu-id="46c42-166">Развертывание клиента App-V</span><span class="sxs-lookup"><span data-stu-id="46c42-166">How to Deploy the App-V Client</span></span>](how-to-deploy-the-app-v-client-51gb18030.md)
+
+[<span data-ttu-id="46c42-167">Развертывание приложения App-V 4,6 и клиента App-V 5,1 на том же компьютере</span><span class="sxs-lookup"><span data-stu-id="46c42-167">How to Deploy the App-V 4.6 and the App-V 5.1 Client on the Same Computer</span></span>](how-to-deploy-the-app-v-46-and-the-app-v--51-client-on-the-same-computer.md)
+
+[<span data-ttu-id="46c42-168">Установка клиента App-V 5.1 для режима хранилища общего содержимого</span><span class="sxs-lookup"><span data-stu-id="46c42-168">How to Install the App-V 5.1 Client for Shared Content Store Mode</span></span>](how-to-install-the-app-v-51-client-for-shared-content-store-mode.md)
+
+ 
+
+ 
+
+
+
+
+
