@@ -1,0 +1,7 @@
+- name: Документы
+  tocHref: /
+  topicHref: /
+  items:
+    - name: Пакет Microsoft Desktop Optimization (MDOP)
+      tocHref: /microsoft-desktop-optimization-pack
+      topicHref: /microsoft-desktop-optimization-pack/index
