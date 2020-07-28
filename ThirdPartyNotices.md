@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 788258d786752d9430c25170ce67efe4b74c6e7a
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 493ba7cb198d7eb33b96156b96389a036db6476b
+ms.sourcegitcommit: c8efa91966d6b4dc7be411c3842bac1c024a179e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10812448"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "10898856"
 ---
 ## Юридические уведомления
 Корпорация Майкрософт и другие участники предоставляют вам лицензию на документацию корпорации Майкрософт и другое содержимое данного репозитория в соответствии с положениями [лицензии Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode) (см. файл [LICENSE](LICENSE)) и лицензию на любой код, находящийся в этом репозитории, в соответствии с положениями [лицензии MIT](https://opensource.org/licenses/MIT) (см. файл [LICENSE-CODE](LICENSE-CODE)).

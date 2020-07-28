@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 09/27/2016
-ms.openlocfilehash: a98bda82fab561113522382b4de6539a9dc23d0c
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 44e7dc6c5de75ae3a5e5def638974bae20ad2a1e
+ms.sourcegitcommit: 594b6e431af98562e0b806e224d2c5c7e07d2c77
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10820119"
+ms.lasthandoff: 07/27/2020
+ms.locfileid: "10895773"
 ---
 # Новые возможности в AGPM 4.0 с пакетом обновления 3 (SP3)
 
@@ -137,6 +137,11 @@ ms.locfileid: "10820119"
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>Windows Server 2019 или Windows 10</p></td>
+<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Поддерживается</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Windows Server 2016 или Windows 10</p></td>
 <td align="left"><p>Windows 10</p></td>
