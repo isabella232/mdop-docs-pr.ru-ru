@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 04/05/2017
-ms.openlocfilehash: b09ea8161b6801c62552f1c0d0ef8455dc111e2f
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: f8a69fb323d9f47c5b906ac3abc6ec59376ee6f7
+ms.sourcegitcommit: 0a7dee11289780336d9c24ebbf27c5c1ffee441c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10819099"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "10905606"
 ---
 # Выбор версии AGPM для установки
 
@@ -53,42 +53,47 @@ ms.locfileid: "10819099"
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows Server 2016 или Windows 10</p></td>
-<td align="left"><p>Windows Server 2016 или Windows 10</p></td>
+<td align="left"><p>Windows Server 2019 или Windows 10</p></td>
+<td align="left"><p>Windows Server 2019 или Windows 10</p></td>
 <td align="left"><p>Поддерживается</p></td>
 </tr>
-<tr class="even">
+ <tr class="even">
+<td align="left"><p>Windows Server 2019 или Windows 10</p></td>
+<td align="left"><p>Windows Server 2019 или Windows 10</p></td>
+<td align="left"><p>Поддерживается</p></td>
+</tr>
+<tr class="edd">
 <td align="left"><p>Windows Server2012 R2</p></td>
 <td align="left"><p>Windows 10;</p></td>
 <td align="left"><p>Поддерживается с помощью предостережений, описанных в <a href="https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv" data-raw-source="[KB 4015786](https://support.microsoft.com/help/4015786/known-issues-managing-a-windows-10-group-policy-client-in-windows-serv)"> статьях KB 4015786</a>
 </p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server2012 R2 или Windows 8.1</p></td>
 <td align="left"><p>Windows Server2012 R2 или Windows 8.1</p></td>
 <td align="left"><p>Поддерживается</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server2012 R2, Windows Server 2012 или Windows 8.1</p></td>
 <td align="left"><p>Windows Server 2012 или Windows 8,1</p></td>
 <td align="left"><p>Поддерживается, но не может изменить параметры политики или элементы предпочтений, существующие только в Windows 8.1</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server2008R2 или Windows7</p></td>
 <td align="left"><p>Windows Server2008R2 или Windows7</p></td>
 <td align="left"><p>Поддерживается, но не может изменить параметры политики или элементы предпочтений, существующие только в Windows 8.1</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server 2012, Windows Server2008R2 или Windows7</p></td>
 <td align="left"><p>Windows Server2008 или WindowsVista с пакетом обновления 1 (SP1)</p></td>
 <td align="left"><p>Поддерживается, но не может изменить параметры политики или элементы предпочтений, существующие только в Windows Server2012 R2, Windows Server 2012, Windows Server2008R2, Windows 8.1 или Windows7</p></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left"><p>Windows Server2008 или Windows Vista с пакетом обновления 1 (SP1)</p></td>
 <td align="left"><p>Windows Server 2012, Windows Server2008R2, Windows 8 и Windows7</p></td>
 <td align="left"><p>Не поддерживается.</p></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left"><p>Windows Server2008 или Windows Vista с пакетом обновления 1 (SP1)</p></td>
 <td align="left"><p>Windows Server2008 или Windows Vista с пакетом обновления 1 (SP1)</p></td>
 <td align="left"><p>Поддерживается, но не может сообщить или изменить параметры политики или элементы предпочтений, существующие только в Windows Server2012 R2, Windows Server 2012, Windows Server2008R2, Windows 8.1 или Windows7</p></td>
