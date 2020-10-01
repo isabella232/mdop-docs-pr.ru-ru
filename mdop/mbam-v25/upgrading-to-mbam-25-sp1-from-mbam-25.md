@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 2/16/2018
-ms.openlocfilehash: 19da3df0976b51700e0d10c302a31421a88d17e4
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 330ded822dd9da96a1c33eabcb31d744044dc28e
+ms.sourcegitcommit: ae34c5cb5e7979b472b257a4691142e493d5d6fe
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10812744"
+ms.lasthandoff: 09/30/2020
+ms.locfileid: "11091624"
 ---
 # Обновление до MBAM 2.5 с пакетом обновления 1 (SP1) с MBAM 2.5
 В этом разделе описывается процесс обновления 2,5 сервера администрирования и мониторинга Microsoft BitLocker (MBAM) и клиента MBAM из 2,5 в MBAM 2,5 SP1.
@@ -24,6 +24,10 @@ ms.locfileid: "10812744"
 ### Перед началом работы
 #### Загрузка выпуска для сопровождения 2019 мая
 [Пакет оптимизации для классической версии](https://www.microsoft.com/download/details.aspx?id=58345)
+
+#### Загрузите выпуск за Июль 2018
+[Пакет оптимизации для классической версии](https://www.microsoft.com/download/details.aspx?id=57157)
+
 
 #### Проверка documentaion установки
 Убедитесь в том, что у вас есть текущая документация по среде MBAM, в том числе все имена серверов, имена баз данных, учетные записи служб и их пароли.
