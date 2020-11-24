@@ -11,12 +11,12 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 10/24/2018
-ms.openlocfilehash: 262cd8c259dc37b291cdaf02caf0e20b7515d38b
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 8ed7915e33c5e4735a7c58674ed5f7d6da8e9a06
+ms.sourcegitcommit: 9087f0a1b5bd3f81a9b790d5e39fdf39c18a2411
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10823892"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "11182931"
 ---
 # Поддерживаемые конфигурации MBAM 2.5
 
@@ -33,7 +33,7 @@ ms.locfileid: "10823892"
 ## Языки, поддерживаемые MBAM
 
 
-В приведенных ниже таблицах показаны языки, которые поддерживаются клиентом MBAM (включая портал самообслуживания) и сервер MBAM в MBAM 2,5 и MBAM 2,5 SP1.
+В приведенных ниже таблицах показаны языки, которые поддерживаются клиентом MBAM (включая портал Self-Service) и сервер MBAM в MBAM 2,5 и MBAM 2,5 SP1.
 
 **Поддерживаемые языки в MBAM 2,5 с пакетом обновления 1 (SP1):**
 
@@ -165,6 +165,12 @@ ms.locfileid: "10823892"
 </tr>
 </thead>
 <tbody>
+<tr class="odd">
+<td align="left"><p>WindowsServer2019</p></td>
+<td align="left"><p>Стандартный или центр обработки данных</p></td>
+<td align="left"></td>
+<td align="left"><p>64-разрядная</p></td>
+</tr>
 <tr class="odd">
 <td align="left"><p>Windows Server2016</p></td>
 <td align="left"><p>Стандартный или центр обработки данных</p></td>
@@ -349,6 +355,10 @@ MBAM поддерживает следующие версии Configuration Mana
 </thead>
 <tbody>
 <tr class="odd">
+<td align="left"><p>Microsoft SQL Server 2019</p></td>
+<td align="left"><p>Стандартный, корпоративный или центр обработки данных</p></td>
+<td align="left"><p></p></td>
+<td align="left"><p>64-разрядная</p></td><br/><tr class="even">
 <td align="left"><p>Microsoft SQL Server 2017</p></td>
 <td align="left"><p>Стандартный, корпоративный или центр обработки данных</p></td>
 <td align="left"><p></p></td>
@@ -377,7 +387,9 @@ MBAM поддерживает следующие версии Configuration Mana
 </table>
 
 **Примечание.**  
-Для поддержки SQL 2016 необходимо установить выпуск за март 2017 для MDOP https://www.microsoft.com/download/details.aspx?id=54967 , а также поддержку sql 2017 вы должны установить выпуск за июль 2018 и сопровождение для MDOP https://www.microsoft.com/download/details.aspx?id=57157 . В общем, всегда используйте Последнее обновление обслуживания, поскольку оно также включает все исправления ошибок и новые возможности.
+MBAM имеет максимальный поддерживаемый уровень совместимости 140. Уровень совместимости по умолчанию для новых баз данных, созданных в SQL Server 2019, составляет 150, которые необходимо изменить в 140 или более ранней, с помощью команды ALTER DATABASE после создания базы данных. Существующие базы данных, перенесенные из SQL Server 2017 или более ранних версий, останутся на прежнем уровне совместимости и не нуждаются в изменении.
+
+Для поддержки SQL 2016 необходимо установить выпуск за март 2017 для MDOP https://www.microsoft.com/download/details.aspx?id=54967  , а также поддержку sql 2017 вы должны установить выпуск за июль 2018 и сопровождение для MDOP https://www.microsoft.com/download/details.aspx?id=57157 . В общем, всегда используйте Последнее обновление обслуживания, поскольку оно также включает все исправления ошибок и новые возможности.
 
 
 ### <a href="" id="bkmk-sql-stand-alone-ramreqs"></a>Требования процессора SQL Server, ОЗУ и места на диске — изолированная топология
@@ -487,7 +499,7 @@ MBAM поддерживает следующие версии Configuration Mana
     <td align="left"><p></p></td>
     <td align="left"><p>32- или 64-разрядная</p></td>
 </tr><br/><tr class="odd">
-<td align="left"><p>Windows 10;</p></td>
+<td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Функции корпоративного уровня</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32- или 64-разрядная</p></td>
@@ -547,7 +559,7 @@ MBAM поддерживает следующие версии Configuration Mana
       <td align="left"><p>32- или 64-разрядная</p></td>
  </tr>
 <tr class="odd">
-<td align="left"><p>Windows 10;</p></td>
+<td align="left"><p>Windows 10</p></td>
 <td align="left"><p>Функции корпоративного уровня</p></td>
 <td align="left"><p></p></td>
 <td align="left"><p>32- или 64-разрядная</p></td>
