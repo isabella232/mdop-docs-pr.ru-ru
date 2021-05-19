@@ -378,7 +378,7 @@
 ###### [Мастер открытия пакетов (App-V 4.6 с пакетом обновления 1 (SP1))](open-package-wizard---appv-46-sp1-.md)
 ####### [Страница "Выберите задачу" (дополнительные сведения)](select-task-page--learn-more-.md)
 ####### [Способ упаковки (дополнительные сведения)](packaging-method--learn-more-.md)
-###### [Мастер виртуализации— ускоритель пакетов (App-V 4.6 с пакетом обновления 1 (SP1))](sequencer-wizard---package-accelerator--appv-46-sp1-.md)
+###### [Мастер виртуализации — ускоритель пакетов (App-V 4.6 с пакетом обновления 1 (SP1))](sequencer-wizard---package-accelerator--appv-46-sp1-.md)
 ####### [Страница "Выберите ускоритель пакетов"](select-package-accelerator-page.md)
 ####### [Страница "Выберите ускоритель пакетов" (дополнительные сведения)](select-package-accelerator--learn-more--page.md)
 ####### [Страница "Инструкции" [App-V 4.6 с пакетом обновления 1 (SP1)]](guidance-page-app-v-46-sp1.md)
