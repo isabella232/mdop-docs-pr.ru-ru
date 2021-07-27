@@ -11,30 +11,34 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/16/2016
-ms.openlocfilehash: 5660757c5fe58b52f9805add781529b47a5c0bd5
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 0cd77c05a10d6d3b43b1592fd261ccfa3f64376f
+ms.sourcegitcommit: 64dedf394f98c06588a8e5f6d56c34af5431d984
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10812813"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "11675795"
 ---
-# Технический справочник по MBAM 2.5
+# <a name="technical-reference-for-mbam-25"></a>Технический справочник по MBAM 2.5
 
 
-В этом разделе содержатся технические сведения о возможностях администрирования и мониторинга Microsoft BitLocker (MBAM) 2,5.
+В этом разделе содержатся технические сведения об особенностях в Microsoft BitLocker Administration and Monitoring (MBAM) 2.5.
 
-## Технические справочные сведения
+## <a name="technical-reference-information"></a>Технические справочные сведения
 
 
 -   [Журналы событий клиента](client-event-logs.md)
 
-    В этом разделе приводится список клиентских событий для MBAM.
+    В этом разделе приводится список событий клиента для MBAM.
 
 -   [Журналы событий сервера](server-event-logs.md)
 
-    В этом разделе приводится список событий сервера для MBAM.
+    В этом разделе приводится список событий Server для MBAM.
 
-## Другие ресурсы для операций MBAM
+- [Сравнение развертываний BitLocker](/windows/security/information-protection/bitlocker/bitlocker-deployment-comparison)
+
+    В этом разделе приведена информация на диаграмме сравнения развертывания BitLocker.
+
+## <a name="other-resources-for-mbam-operations"></a>Другие ресурсы для операций MBAM
 
 
 [Microsoft BitLocker Administration and Monitoring 2.5](index.md)
@@ -49,14 +53,13 @@ ms.locfileid: "10812813"
 
 [Устранение неполадок MBAM 2.5](troubleshooting-mbam-25.md)
 
-## У вас есть предложение MBAM?
-- Здесь вы можете добавить предложения и проголосовать [здесь](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
-- Для MBAM проблемы используйте [MBAM Форум TechNet](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam).
+## <a name="got-a-suggestion-for-mbam"></a>Есть предложение для MBAM?
+- Добавьте или проголосуйте по [предложениям здесь](http://mbam.uservoice.com/forums/268571-microsoft-bitlocker-administration-and-monitoring). 
+- Для решения проблем MBAM используйте [форум MBAM TechNet.](https://social.technet.microsoft.com/Forums/home?forum=mdopmbam)
 
- 
+ 
 
- 
-
+ 
 
 
 
