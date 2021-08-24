@@ -1,6 +1,6 @@
 ---
-title: Планирование, развертывание и руководство по работе с виртуализацией рабочих столов Microsoft Enterprise
-description: Планирование, развертывание и руководство по работе с виртуализацией рабочих столов Microsoft Enterprise
+title: Microsoft Enterprise Desktop Virtualization Руководство по планированию, развертыванию и операциям
+description: Microsoft Enterprise Desktop Virtualization Руководство по планированию, развертыванию и операциям
 author: dansimp
 ms.assetid: 7bc3e120-df77-4f4c-bc8e-7aaa4c2a6525
 ms.pagetype: mdop, virtualization
@@ -8,26 +8,26 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.prod: w10
 ms.date: 06/16/2016
-ms.openlocfilehash: 2a5f3a617d2c7b23b530474893a68a60c2d5b189
-ms.sourcegitcommit: 354664bc527d93f80687cd2eba70d1eea024c7c3
+ms.openlocfilehash: 2cbdb429349cc337d64912bd846173e6f61ae12d
+ms.sourcegitcommit: 3e0500abde44d6a09c7ac8e3caf5e25929b490a4
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "10795950"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "11910794"
 ---
-# Планирование, развертывание и руководство по работе с виртуализацией рабочих столов Microsoft Enterprise
+# <a name="microsoft-enterprise-desktop-virtualization-planning-deployment-and-operations-guide"></a>Microsoft Enterprise Desktop Virtualization Руководство по планированию, развертыванию и операциям
 
 
-![Виртуализация рабочих столов Microsoft Enterprise](images/medv.gif)
+![корпоративная виртуализация рабочего стола майкрософт.](images/medv.gif)
 
-Microsoft Enterprise Virtualization (MED-V) использует Microsoft Virtual PC для предоставления корпоративного решения для виртуализации настольных систем. С помощью MED-V вы легко можете создавать корпоративные образы Virtual PC, доставлять их на любой компьютер Windows® и управлять ими.
+Microsoft Enterprise Desktop Virtualization (MED-V) использует Виртуальный компьютер Microsoft для предоставления корпоративного решения для виртуализации настольных компьютеров. С помощью MED-V вы легко можете создавать корпоративные образы Virtual PC, доставлять их на любой компьютер Windows® и управлять ими.
 
-MED-V является неотъемлемой частью пакета оптимизации рабочей среды Майкрософт, динамическим решением, доступным для пользователей программы Software Assurance, что помогает сократить расходы на развертывание приложений, обеспечивает доставку приложений в качестве служб, а также помогает лучше управлять корпоративными средами предприятий.
+MED-V является неотъемлемой частью пакета оптимизации рабочего стола Майкрософт, динамического решения, доступного клиентам по обеспечению безопасности программного обеспечения, которое помогает снизить затраты на развертывание приложений, обеспечивает доставку приложений в качестве служб и помогает лучше управлять корпоративными настольными средами и управлять ими.
 
-## В этом разделе
+## <a name="in-this-section"></a>В этом разделе
 
 
-В этом руководстве рассматриваются следующие темы:
+В этом руководстве освещаются следующие темы:
 
 [Информация о руководстве](about-this-guidemedv.md)
 
@@ -43,9 +43,9 @@ MED-V является неотъемлемой частью пакета опт
 
 [Технический справочник](technical-referencemedv-10-sp1.md)
 
- 
+ 
 
- 
+ 
 
 
 
